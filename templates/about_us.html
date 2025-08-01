@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>StockBot | Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background-color: #0d6efd;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .feature-icon {
+      font-size: 2rem;
+    }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="display-4">Bienvenido a StockBot</h1>
+    <p class="lead">Tu asistente inteligente para el control de inventario, ventas y chatbot.</p>
+    <a href="{{ url_for('login') }}" class="btn btn-light btn-lg mt-3">Iniciar sesión</a>
+  </section>
+
+  <!-- Características -->
+  <section class="container py-5">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="feature-icon mb-2">📦</div>
+        <h4>Gestión de Inventario</h4>
+        <p>Agrega productos, controla stock y visualiza su disponibilidad en tiempo real.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature-icon mb-2">💬</div>
+        <h4>Chatbot Integrado</h4>
+        <p>Obtén ayuda directa con un asistente virtual para tus operaciones.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature-icon mb-2">📊</div>
+        <h4>Registro de Ventas</h4>
+        <p>Lleva el control de tus ventas con historial y estadísticas básicas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Imagen o demo -->
+  <section class="container mb-5 text-center">
+    <h3>Vista previa del sistema</h3>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+    <img src="{{ url_for('static', filename='img/captura_1.png') }}" class="img-fluid rounded shadow mt-3" alt="Captura de pantalla del sistema">
+      </div>
+      <div class="col-md-4 mb-4">
+    <img src="{{ url_for('static', filename='img/captura_2.png') }}" class="img-fluid rounded shadow mt-3" alt="Captura de pantalla del sistema">
+      </div>
+      <div class="col-md-4 mb-4">
+    <img src="{{ url_for('static', filename='img/captura_3.png') }}" class="img-fluid rounded shadow mt-3" alt="Captura de pantalla del sistema">
+      </div>
+  </section>
+
+  <!-- Sobre el creador -->
+  <section class="container mb-5">
+    <h4>Sobre el creador</h4>
+    <p>StockBot fue desarrollado como una solución sencilla y efectiva para pequeñas empresas que necesitan administrar su inventario de forma digital.</p>
+    <p>Puedes contactarme o saber más sobre mí en <a href="https://www.linkedin.com/in/imanol-elizondo-perucich" target="_blank">LinkedIn</a>.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 StockBot | Desarrollado por Imanol Elizondo</p>
+  </footer>
+
+</body>
+</html>

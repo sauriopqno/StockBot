@@ -1,0 +1,35 @@
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+
+# Archivos temporales
+*.pyc
+__pycache__/
+
+# Configuraciones del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración local
+*.env
+.env.*
+instance/
+*.sqlite3
+*.db
+
+# VS Code
+.vscode/
+
+# Archivos de log
+*.log
+
+# Archivos de subida o multimedia temporales
+uploads/
+media/
+static/uploads/
+
+# Cache de Flask
+*.bak
+.cache/
